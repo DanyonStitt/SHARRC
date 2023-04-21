@@ -58,7 +58,7 @@ ul {
 }
 
 .hero-content {
-    font
+    font-size: large;
 }
 
 
@@ -105,6 +105,25 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.odd-section-title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.odd-section-subtitle {
+    font-size: large;
+    font-weight: lighter;
+    max-width: 80vw;
+}
+
+.odd-section-content {
+    max-width: 90vw;
+}
+
+.link-logo {
+    font-weight: bold;
 }
 
 
