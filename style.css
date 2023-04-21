@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Global definitions */
 body {
     font-family: Roboto, serif;
     margin: 0px;
@@ -9,6 +10,10 @@ body {
     justify-content: space-between;
 }
 
+li {list-style: none;}
+
+
+/* Header */
 header {
     display: flex;
     flex-direction: row;
@@ -19,6 +24,11 @@ header {
     padding-right: 20px;
 }
 
+.logo {
+    font-size: x-large;
+    font-weight: bolder;
+} 
+
 ul {
     display: flex;
     flex-direction: row;
@@ -28,11 +38,10 @@ ul {
 }
 
 
-li {list-style: none;}
-
+/* Hero section */
 .hero {
     display: flex;
-    min-height: 100px;
+    min-height: 30vh;
     align-items: center;
     justify-content: center;
 }
@@ -40,9 +49,20 @@ li {list-style: none;}
 .hero-content-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5vh;
 }
 
+.hero-header {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.hero-content {
+    font
+}
+
+
+/* Main content */
 .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -56,10 +76,76 @@ section {
     align-items: center;
     justify-content: center;
     max-width: 90vw;
+    min-height: 40vh;
+
 }
 
+.section-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.section-link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Odd sections */
 .odd-section {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    justify-content: space-between;
 }
+
+.odd-section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Even sections */
+.even-section {
+    display: flex;
+}
+
+.even-section-content {
+    display: flex;
+    gap: 30px;
+}
+
+.even-section-link {
+    min-width: 20vw;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.socials {
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
