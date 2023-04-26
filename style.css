@@ -13,6 +13,8 @@ body {
 
 li {list-style: none;}
 
+i {font-size: 5em;}
+
 
 /* Top sections */
 .top-content {
@@ -21,6 +23,7 @@ li {list-style: none;}
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center, left;
+    color:rgb(253, 243, 230) ;
 }
 
 
@@ -33,13 +36,11 @@ header {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
-    color:rgb(253, 242, 227) ;
 }
 
 .logo {
     font-size: x-large;
     font-weight: bolder;
-    /* color: #ff6961; */
 } 
 
 ul {
@@ -54,10 +55,10 @@ ul {
 /* Hero section */
 .hero {
     display: flex;
-    min-height: 30vh;
+    min-height: 45vh;
     align-items: center;
     justify-content: center;
-    color:rgb(253, 242, 227)
+    /* color:rgb(253, 242, 227) */
 }
 
 .hero-content-wrapper{
@@ -97,7 +98,7 @@ section {
 .section-links {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 10vw;
 }
 
 .section-link {
