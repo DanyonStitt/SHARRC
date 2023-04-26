@@ -126,6 +126,7 @@ header {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     gap: 50px;
+    align-items: center;
 }
 
 .section-links {
@@ -181,10 +182,12 @@ footer {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .socials {
+    justify-content: center;
+    align-items: center;
     min-width: 30vw;
     display: flex;
     flex-direction: column;
