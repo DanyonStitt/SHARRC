@@ -8,9 +8,20 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
+    color: #3c4858;
 }
 
 li {list-style: none;}
+
+
+/* Top sections */
+.top-content {
+    background-image: url(Images/Climbing.jpg);
+    background-color: rgb(177, 162, 163);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center, left;
+}
 
 
 /* Header */
@@ -22,11 +33,13 @@ header {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+    color:rgb(253, 242, 227) ;
 }
 
 .logo {
     font-size: x-large;
     font-weight: bolder;
+    /* color: #ff6961; */
 } 
 
 ul {
@@ -44,6 +57,7 @@ ul {
     min-height: 30vh;
     align-items: center;
     justify-content: center;
+    color:rgb(253, 242, 227)
 }
 
 .hero-content-wrapper{
