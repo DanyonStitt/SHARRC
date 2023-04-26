@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: space-between;
     color: #3c4858;
 }
 
@@ -25,15 +24,23 @@ button {
 
 section {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 90vw;
     min-height: 40vh;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    gap: 20px;
+}
+
+
 /* Top sections */
 .top-content {
+    flex-direction: column;
     background-image: url(Images/Climbing.jpg);
     background-color: rgb(177, 162, 163);
     background-blend-mode: multiply;
@@ -42,8 +49,6 @@ section {
     color:rgb(253, 243, 230) ;
 }
 
-
-/* Header */
 header {
     display: flex;
     flex-direction: row;
@@ -58,14 +63,6 @@ header {
     font-size: x-large;
     font-weight: bolder;
 } 
-
-ul {
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    padding: 0px;
-    gap: 20px;
-}
 
 
 /* Hero section */
@@ -87,17 +84,23 @@ ul {
     font-weight: bold;
 }
 
-.hero-content {
-    font-size: large;
+.hero-content {font-size: large;}
+
+
+/* Link sections */
+.link-section {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-
-/* Main content */
 .content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 90vw;
+    gap: 50px;
 }
 
 .section-links {
@@ -112,34 +115,21 @@ ul {
     gap: 10px;
 }
 
-
-/* Odd sections */
-.odd-section {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    justify-content: space-between;
-}
-
-.odd-section-header {
+.link-section-header {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.odd-section-title {
+.link-section-title {
     font-size: x-large;
     font-weight: bold;
 }
 
-.odd-section-subtitle {
+.link-section-subtitle {
     font-size: large;
     font-weight: lighter;
     max-width: 80vw;
-}
-
-.odd-section-content {
-    max-width: 90vw;
 }
 
 .link-logo {
@@ -148,7 +138,7 @@ ul {
 
 
 /* Even sections */
-.even-content-wrapper {
+.slide-section {
     background-image: url(Images/Squat.jpg);
     background-color: rgb(177, 162, 163);
     background-blend-mode: multiply;
@@ -158,9 +148,10 @@ ul {
     min-height: 50vh;
 }
 
-.even-section-content {
+.slide-section-content {
     display: flex;
     gap: 30px;
+    max-width: 90vw;
 }
 
 .even-section-link {
