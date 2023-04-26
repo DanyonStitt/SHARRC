@@ -77,6 +77,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 5vh;
+    max-width: 90vw;
 }
 
 .hero-header {
@@ -103,18 +104,6 @@ header {
     gap: 50px;
 }
 
-.section-links {
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
-}
-
-.section-link {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .link-section-header {
     display: flex;
     flex-direction: column;
@@ -130,6 +119,25 @@ header {
     font-size: large;
     font-weight: lighter;
     max-width: 80vw;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 50px;
+}
+
+.section-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+
+.section-link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .link-logo {
