@@ -15,6 +15,13 @@ li {list-style: none;}
 
 i {font-size: 5em;}
 
+button {
+    color: #FFFFFF;
+    background-color: #b2263b;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 30px;
+}
 
 /* Top sections */
 .top-content {
@@ -48,14 +55,14 @@ ul {
     flex-direction: row;
     margin: 0px;
     padding: 0px;
-    gap: 10px;
+    gap: 20px;
 }
 
 
 /* Hero section */
 .hero {
     display: flex;
-    min-height: 45vh;
+    min-height: 50vh;
     align-items: center;
     justify-content: center;
     /* color:rgb(253, 242, 227) */
