@@ -171,8 +171,10 @@ ul {
 
     .slide-section-content {
         display: flex;
+        flex-direction: column;
         gap: 30px;
         max-width: 90vw;
+        text-align: center;
     }
 
     .even-section-link {
@@ -184,7 +186,7 @@ ul {
     footer {
         display: flex;
         flex-direction: column;
-        min-height: 20vh;
+        min-height: 15vh;
         justify-content: space-evenly;
         padding-left: 20px;
         padding-right: 20px;
