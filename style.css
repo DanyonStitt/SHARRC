@@ -19,6 +19,7 @@ button {
     background-color: #b2263b;
     border-radius: 5px;
     border: none;
+    width: fit-content;
     padding: 12px 30px;
 }
 
@@ -26,7 +27,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 50vh;
 }
 
 ul {
@@ -39,10 +40,6 @@ ul {
 
 /* For smaller devices */
 @media only screen and (max-width: 767px){
-    /* Global settings */
-    button {
-        width: fit-content;
-    }
 
     /* Top sections */
     .top-content {
@@ -107,8 +104,8 @@ ul {
     /* Link sections */
     .link-section {
         text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .content-wrapper {
@@ -219,13 +216,14 @@ ul {
 
     /* Top sections */
     .top-content {
-        flex-direction: column;
         background-image: url(Images/Climbing.jpg);
         background-color: rgb(177, 162, 163);
         background-blend-mode: multiply;
         background-size: cover;
         background-position: center, left;
-        color:rgb(253, 243, 230) ;
+        color:rgb(253, 243, 230);
+        align-items: center;
+        justify-content: center;
     }
 
     #menu-bars {
@@ -235,11 +233,11 @@ ul {
     header {
         display: flex;
         flex-direction: row;
-        height: 50px;
+        height: 70px;
         align-items: center;
         justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     .logo {
@@ -251,7 +249,7 @@ ul {
     /* Hero section */
     .hero {
         display: flex;
-        min-height: 50vh;
+        min-height: 70vh;
         align-items: center;
         justify-content: center;
     }
@@ -274,17 +272,16 @@ ul {
     /* Link sections */
     .link-section {
         text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .content-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        max-width: 90vw;
-        gap: 50px;
+        max-width: 80vw;
+        gap: 80px;
     }
 
     .link-section-header {
@@ -307,21 +304,15 @@ ul {
     .grid-container {
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 1fr;
+        grid-auto-columns: 20vw;
         gap: 50px;
-        align-items: center;
-    }
-
-    .section-links {
-        display: flex;
-        flex-direction: row;
-        gap: 10vw;
     }
 
     .section-link {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
 
     .link-logo {
@@ -343,7 +334,7 @@ ul {
     .slide-section-content {
         display: flex;
         gap: 30px;
-        max-width: 90vw;
+        max-width: 70vw;
     }
 
     .even-section-link {
