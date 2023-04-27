@@ -39,6 +39,11 @@ ul {
 
 /* For smaller devices */
 @media only screen and (max-width: 767px){
+    /* Global settings */
+    button {
+        width: fit-content;
+    }
+
     /* Top sections */
     .top-content {
         flex-direction: column;
@@ -72,7 +77,7 @@ ul {
     /* Hero section */
     .hero {
         display: flex;
-        min-height: 50vh;
+        min-height: 70vh;
         align-items: center;
         justify-content: center;
     }
@@ -87,9 +92,13 @@ ul {
     .hero-header {
         font-size: xx-large;
         font-weight: bold;
+        text-align: center;
     }
 
-    .hero-content {font-size: large;}
+    .hero-content {
+        font-size: large;
+        text-align: center;
+    }
 
     /* Link sections */
     .link-section {
@@ -110,6 +119,8 @@ ul {
     .link-section-header {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 20px;
     }
 
@@ -125,23 +136,20 @@ ul {
     }
 
     .grid-container {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
-        gap: 50px;
-        align-items: center;
-    }
-
-    .section-links {
         display: flex;
-        flex-direction: row;
-        gap: 10vw;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
     }
 
     .section-link {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        width: 50vw;
+        gap: 15px;
     }
 
     .link-logo {
