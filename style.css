@@ -14,6 +14,11 @@ li {list-style: none;}
 
 i {font-size: 5em;}
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 button {
     color: #FFFFFF;
     background-color: #b2263b;
