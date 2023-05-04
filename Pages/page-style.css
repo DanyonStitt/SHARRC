@@ -106,6 +106,12 @@ ul {
     }
 
 
+    /* Text sections */
+    .text-section {
+        flex-direction: column;
+    }
+
+
     /* Footer */
     footer {
         display: flex;
@@ -193,7 +199,7 @@ ul {
     }
 
     .hero-content {font-size: large;}
-    
+
 
     /* Footer */
     footer {
