@@ -110,6 +110,7 @@ ul {
     .text-section {
         flex-direction: column;
         gap: 20px;
+        padding-bottom: 50px;
     }
 
     .para {
@@ -117,10 +118,17 @@ ul {
         margin: 0px;
     }
 
+    /* Picture section */
     .picture-section {
         height: 30vh;
         display: flex;
         flex-direction: column;
+        background-image: url(../Images/Skiing.jpg);
+        background-color: rgb(177, 162, 163);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center, left;
+        color:rgb(253, 243, 230) ;
     }
 
     .quote {
