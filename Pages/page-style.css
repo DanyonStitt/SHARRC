@@ -109,8 +109,23 @@ ul {
     /* Text sections */
     .text-section {
         flex-direction: column;
+        gap: 20px;
     }
 
+    .para {
+        max-width: 80vw;
+        margin: 0px;
+    }
+
+    .picture-section {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quote {
+        max-width: 80vw;
+    }
 
     /* Footer */
     footer {
