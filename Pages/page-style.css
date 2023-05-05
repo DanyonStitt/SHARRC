@@ -82,7 +82,7 @@ ul {
     /* Hero section */
     .hero {
         display: flex;
-        min-height: 30vh;
+        min-height: 20vh;
         align-items: center;
         justify-content: center;
     }
@@ -95,13 +95,8 @@ ul {
     }
 
     .hero-header {
-        font-size: xx-large;
+        font-size: 3em;
         font-weight: bold;
-        text-align: center;
-    }
-
-    .hero-content {
-        font-size: large;
         text-align: center;
     }
 
@@ -111,16 +106,28 @@ ul {
         flex-direction: column;
         gap: 20px;
         padding-bottom: 50px;
+        padding-top: 10px;
     }
 
     .para {
         max-width: 80vw;
         margin: 0px;
+        font-size: large;
     }
+
+    h4 {
+        padding-top: 10px;
+        margin: 0px;
+    }
+
+    h1 {
+        margin-bottom: 0px;
+    }
+
 
     /* Picture section */
     .picture-section {
-        height: 30vh;
+        min-height: 40vh;
         display: flex;
         flex-direction: column;
         background-image: url(../Images/Skiing.jpg);
@@ -135,6 +142,7 @@ ul {
         max-width: 80vw;
     }
 
+    
     /* Footer */
     footer {
         display: flex;
@@ -204,7 +212,7 @@ ul {
     /* Hero section */
     .hero {
         display: flex;
-        min-height: 70vh;
+        min-height: 30vh;
         align-items: center;
         justify-content: center;
     }
@@ -217,11 +225,53 @@ ul {
     }
 
     .hero-header {
-        font-size: xx-large;
+        font-size: 4em;
         font-weight: bold;
     }
 
-    .hero-content {font-size: large;}
+
+    /* Text sections */
+    .text-section {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 50px;
+        padding-top: 10px;
+        min-height: 50vh;
+    }
+
+    .para {
+        max-width: 700px;
+        margin: 0px;
+        font-size: large;
+        font-weight: lighter;
+    }
+
+    h4 {
+        padding-top: 10px;
+        margin: 0px;
+    }
+
+    h1 {
+        margin-bottom: 0px;
+    }
+
+
+    /* Picture section */
+    .picture-section {
+        min-height: 40vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url(../Images/Skiing.jpg);
+        background-color: rgb(177, 162, 163);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center, left;
+        color:rgb(253, 243, 230) ;
+    }
+
+    .quote {
+        max-width: 50vw;
+    }
 
 
     /* Footer */
