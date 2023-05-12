@@ -42,6 +42,17 @@ ul {
     gap: 20px;
 }
 
+/* Top sections */
+.top-content {
+    flex-direction: column;
+    background-image: url(Images/Climbing.jpg);
+    background-color: rgb(177, 162, 163);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center, left;
+    color:rgb(253, 243, 230);
+}
+
 /* For smaller devices */
 @media only screen and (max-width: 767px){
 
@@ -212,7 +223,7 @@ ul {
         flex-direction: row;
         margin: 0px;
         padding: 0px;
-        gap: 20px;
+        gap: 30px;
     }
 
     .logo {
