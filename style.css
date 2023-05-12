@@ -42,21 +42,21 @@ ul {
     gap: 20px;
 }
 
+/* Top sections */
+.top-content {
+    flex-direction: column;
+    background-image: url(Images/Climbing.jpg);
+    background-color: rgb(177, 162, 163);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center, left;
+    color:rgb(253, 243, 230);
+}
+
 /* For smaller devices */
 @media only screen and (max-width: 767px){
 
-    /* Top sections */
-    .top-content {
-        flex-direction: column;
-        background-image: url(Images/Climbing.jpg);
-        background-color: rgb(177, 162, 163);
-        background-blend-mode: multiply;
-        background-size: cover;
-        background-position: center, left;
-        color:rgb(253, 243, 230) ;
-    }
-
-    .nav-items {
+    .nav-items, #comp-logo {
         display: none;
     }
 
@@ -64,15 +64,39 @@ ul {
         font-size: 30px;
     }
 
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #myLinks {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+        justify-content: space-evenly;
+    }
+
     header {
+        overflow: hidden;
+        position: sticky;
         display: flex;
         flex-direction: row;
-        height: 50px;
+        min-height: 50px;
         align-items: center;
         justify-content: space-between;
         padding-left: 20px;
         padding-right: 20px;
+        background-color: #3c4858;
     }
+    
 
     .logo {
         font-size: x-large;
@@ -217,22 +241,10 @@ ul {
     }
 }
 
-
+/* For computer screens */
 @media only screen and (min-width: 768px){
 
-    /* Top sections */
-    .top-content {
-        background-image: url(Images/Climbing.jpg);
-        background-color: rgb(177, 162, 163);
-        background-blend-mode: multiply;
-        background-size: cover;
-        background-position: center, left;
-        color:rgb(253, 243, 230);
-        align-items: center;
-        justify-content: center;
-    }
-
-    #menu-bars {
+    #menu-bars, .mobile-menu {
         display: none;
     }
 
