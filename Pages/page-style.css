@@ -174,7 +174,7 @@ ul {
     }
 }
 
-
+/* For computer screens */
 @media only screen and (min-width: 768px){
 
     /* Top sections */
@@ -193,6 +193,10 @@ ul {
         display: none;
     }
 
+    #drop-down-indicator {
+        font-size: 10px;
+    }
+
     header {
         display: flex;
         flex-direction: row;
@@ -203,10 +207,60 @@ ul {
         padding-right: 10vw;
     }
 
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+        gap: 20px;
+    }
+
     .logo {
         font-size: x-large;
         font-weight: bolder;
-    } 
+        margin: 0px;
+    }
+
+    .logo:hover {
+        transform: scale(1.1);
+        transition: 0.1s;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        max-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(43, 42, 42, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        padding: 12px 5px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover {
+        transform: scale(1.1);
+        transition: 0.1s;
+    }
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown-content a:hover {
+        transform: scale(1.05);
+        transition: 0.1s;
+    }
+
+    .non-dropdown:hover {
+        transform: scale(1.1);
+        transition: 0.1s;
+    }
 
 
     /* Hero section */

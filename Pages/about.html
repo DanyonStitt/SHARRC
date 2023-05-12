@@ -11,27 +11,40 @@
 <body>
     <div class="top-content">
         <header class="header">
-            <div class="logo">
-                <a href="../index.html">SHARRC</a>
-            </div>
+            <h1 class="logo"><a href="../index.html">SHARRC</a></h1>
             <i id="menu-bars" class="fa-solid fa-bars"></i>
-            <ul class="nav-items">
-                <li>
-                    <a href="about.html">ABOUT</a>
-                </li>
-                <li>
+            <nav class="nav-items">
+                <!-- Nav items will be drop down lists NEED TO LEARN THAT -->
+                <div class="dropdown"><a href="#">ABOUT</a>
+                    <i id="drop-down-indicator" class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="about-team.html">Team</a>
+                        <a href="about-publications.html">Publications</a>
+                    </div>
+                </div>
+                <!-- About section will contain  the people involved in the cluster and the publications-->
+                <div class="dropdown">
                     <a href="Pages/about.html">PROJECTS</a>
-                </li>
-                <li>
+                    <i id="drop-down-indicator" class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="Pages/about-team.html">Team</a>
+                        <a href="Pages/about-publications.html">Publications</a>
+                    </div>
+                </div>
+                <!-- Project will contain the specific projects and some info about each one -->
+                <div class="non-dropdown">
                     <a href="Pages/about.html">RESOURCES</a>
-                </li> 
-                <li>
+                </div> 
+                <!-- Resources will contain the facilities that are available and any open access/publically available data and useable resources -->
+                <div class="non-dropdown">
                     <a href="Pages/about.html">FUNDING</a>
-                </li>
-                <li>
+                </div>
+                <!-- Small info about each funding partner, what they fund, and what they do. -->
+                <div class="non-dropdown">
                     <a href="Pages/about.html">CONTACT</a>
-                </li>
-            </ul>
+                </div>
+                <!-- Contact info for natalia, nick, etc. -->
+            </nav>
         </header>
 
         <div class="hero">
