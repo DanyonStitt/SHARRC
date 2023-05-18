@@ -117,7 +117,7 @@ ul {
     }
 
     .hero-header {
-        font-size: 3em;
+        font-size: 4em;
         font-weight: bold;
         text-align: center;
     }
@@ -199,19 +199,7 @@ ul {
 /* For computer screens */
 @media only screen and (min-width: 768px){
 
-    /* Top sections */
-    .top-content {
-        background-image: url(../Images/Climbing.jpg);
-        background-color: rgb(177, 162, 163);
-        background-blend-mode: multiply;
-        background-size: cover;
-        background-position: center, left;
-        color:rgb(253, 243, 230);
-        align-items: center;
-        justify-content: center;
-    }
-
-    #menu-bars {
+    #menu-bars, .mobile-menu {
         display: none;
     }
 
@@ -234,7 +222,7 @@ ul {
         flex-direction: row;
         margin: 0px;
         padding: 0px;
-        gap: 30px;
+        gap: 3vw;
     }
 
     .logo {
@@ -288,7 +276,7 @@ ul {
     /* Hero section */
     .hero {
         display: flex;
-        min-height: 30vh;
+        min-height: 40vh;
         align-items: center;
         justify-content: center;
     }
