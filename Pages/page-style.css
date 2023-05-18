@@ -94,11 +94,13 @@ ul {
         justify-content: space-between;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 15px;
     }
 
     .logo {
         font-size: x-large;
         font-weight: bolder;
+        margin: 0px;
     }
 
     /* Hero section */
