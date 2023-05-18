@@ -1,9 +1,11 @@
-const menu = document.getElementById("myLinks");
-const hamburger = document.getElementById("menu-bars");
-const hero = document.querySelector(".hero");
+function showMenu() {
+    let menu = document.getElementById("myLinks");
+    let hamburger = document.getElementById("menu-bars");
+    let hero = document.querySelector(".hero");
 
-hamburger.addEventListener("click", () => {
-    if (menu.style.display == "none") {
+    let menuDisplay = window.getComputedStyle(menu).getPropertyValue("display");
+
+    if (menuDisplay === "none") {
         menu.style.display = "flex";
         hero.style.display = "none"
         hamburger.className = "fa-solid fa-xmark"
@@ -13,4 +15,4 @@ hamburger.addEventListener("click", () => {
         hero.style.display = "flex";
         hamburger.className = "fa-solid fa-bars"
     };
-});
+}
