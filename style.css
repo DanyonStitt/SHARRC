@@ -82,7 +82,7 @@ ul {
         align-items: center;
         height: 70vh;
         justify-content: space-evenly;
-        font-size: x-large;
+        font-size: 2em;
     }
 
     header {
@@ -95,7 +95,6 @@ ul {
         justify-content: space-between;
         padding-left: 20px;
         padding-right: 20px;
-        /* background-color: #3c4858; */
     }
     
 
@@ -116,11 +115,11 @@ ul {
     }
 
     .pop-out-content {
-        padding-top: 5px;
+        padding-top: 15px;
         display: none;
         flex-direction: column;
-        font-size: large;
-        gap: 10px;
+        font-size: x-large;
+        gap: 20px;
         align-items: center;
     }
 
