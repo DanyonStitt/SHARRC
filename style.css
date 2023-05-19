@@ -104,7 +104,7 @@ ul {
         font-weight: bolder;
     }
 
-    #pop-out-indicator {
+    .pop-out i {
         font-size: 10px;
     }
 
@@ -120,7 +120,7 @@ ul {
         display: none;
         flex-direction: column;
         font-size: large;
-        gap: 8px;
+        gap: 10px;
         align-items: center;
     }
 
