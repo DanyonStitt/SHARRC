@@ -104,6 +104,23 @@ ul {
         font-weight: bolder;
     }
 
+    #pop-out-indicator {
+        font-size: 10px;
+    }
+
+    .pop-out-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .pop-out-content {
+        display: none;
+        flex-direction: column;
+        font-size: large;
+    }
+
     /* Hero section */
     .hero {
         display: flex;

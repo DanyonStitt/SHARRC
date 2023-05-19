@@ -18,22 +18,26 @@
                     <i id="menu-bars" class="fa-solid fa-bars" onclick="showMenu()"></i>
                 </div>
                 <div id="myLinks">
-                    <div class="pop-out">
-                        <div>ABOUT</div>
-                        <i id="pop-out-indicator" class="fa-solid fa-caret-right"></i>
-                        <div class="pop-out-content">
-                            <a href="Pages/about.html">About SHARRC</a>
-                            <a href="Pages/about-team.html">Team</a>
-                            <a href="Pages/about-publications.html">Publications</a>
+                        <div class="pop-out">
+                            <div class="pop-out-item">
+                                <a class="about" href="#" onclick="showPopOut('.about')">ABOUT</a>
+                                <i id="pop-out-indicator" class="fa-solid fa-caret-down"></i>
+                            </div>
+                            <div id="about" class="pop-out-content">
+                                <a href="Pages/about.html">About SHARRC</a>
+                                <a href="Pages/about-team.html">Team</a>
+                                <a href="Pages/about-publications.html">Publications</a>
+                            </div>
                         </div>
-                    </div>
+                    
                     <div class="pop-out">
-                        <div>PROJECTS</div>
-                        <i id="pop-out-indicator" class="fa-solid fa-caret-right"></i>
-                        <div class="pop-out-content">
-                            <a href="Pages/about.html">About SHARRC</a>
-                            <a href="Pages/about-team.html">Team</a>
-                            <a href="Pages/about-publications.html">Publications</a>
+                        <div class="pop-out-item">
+                            <a class="projects" href="#" onclick="showPopOut('.projects')">PROJECTS</a>
+                            <i id="pop-out-indicator" class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div id="projects" class="pop-out-content">
+                            <a href="Pages/about.html">Current projects</a>
+                            <a href="Pages/about-team.html">Past projects</a>
                         </div>
                     </div>
                     <a href="Pages/about.html">RESOURCES</a>
