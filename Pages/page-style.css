@@ -169,6 +169,63 @@ ul {
     }
 
 
+    /* Meet the team grid */
+    .team-grid {
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 10px;
+    }
+
+    .person {
+        width: 80vw;
+        display: flex;
+        gap: 10px;
+    }
+
+    /* For mobile screens only */
+    @media only screen and (max-width: 550px) {
+        .person {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 250px;
+        }
+
+        .description {
+            margin: 0px;
+            padding-top: 5px;
+            padding-bottom: 25px;
+        }
+    }
+
+    /* For screens in between mobile and full screen computer */
+    .image-name {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .photo {
+        width: 250px;
+        height: fit-content;
+        background-color: rgb(177, 162, 163);
+        background-blend-mode: multiply;
+        background-size: contain;
+        color:rgb(253, 243, 230);
+    }
+
+    .image-name h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .description {
+        margin: 0px;
+    }
+
+
     /* Picture section */
     .picture-section {
         min-height: 40vh;
