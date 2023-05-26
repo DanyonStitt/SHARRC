@@ -175,11 +175,12 @@ ul {
         gap: 20px;
         align-self: center;
         align-items: baseline;
+        padding-bottom: 40px;
     }
 
     .publications h2 {
         margin: 0px;
-        padding-top: 15px;
+        padding-top: 20px;
     }
 
 
@@ -428,6 +429,21 @@ ul {
 
     .description {
         margin: 0px;
+    }
+
+    /* Publications section */
+    .publications {
+        flex-direction: column;
+        max-width: 70vw;
+        align-self: center;
+        align-items: baseline;
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .publications h2 {
+        margin: 0px;
+        padding-top: 30px;
     }
 
 
