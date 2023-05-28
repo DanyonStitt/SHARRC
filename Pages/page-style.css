@@ -53,6 +53,241 @@ ul {
     color:rgb(253, 243, 230);
 }
 
+@media print {
+    .nav-items, #comp-logo {
+        display: none;
+    }
+
+    #menu-bars {
+        font-size: 30px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #myLinks {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        justify-content: space-evenly;
+        font-size: 2em;
+    }
+
+    header {
+        overflow: hidden;
+        position: sticky;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+    }
+
+    .logo {
+        font-size: x-large;
+        font-weight: bolder;
+        margin: 0px;
+    }
+
+    .pop-out i {
+        font-size: 10px;
+    }
+
+    .pop-out-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .pop-out-content {
+        padding-top: 15px;
+        display: none;
+        flex-direction: column;
+        font-size: x-large;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* Hero section */
+    .hero {
+        display: flex;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        max-width: 90vw;
+    }
+
+    .hero-header {
+        font-size: 4em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+    /* Text sections */
+    .text-section {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 50px;
+        padding-top: 10px;
+    }
+
+    .para {
+        max-width: 80vw;
+        margin: 0px;
+        font-size: large;
+    }
+
+    h4 {
+        padding-top: 10px;
+        margin: 0px;
+    }
+
+    h1 {
+        margin-bottom: 0px;
+    }
+
+    /* Publications section */
+    .publications {
+        width: 80vw;
+        flex-direction: column;
+        gap: 20px;
+        align-self: center;
+        align-items: baseline;
+        padding-bottom: 40px;
+    }
+
+    .publications h2 {
+        margin: 0px;
+        padding-top: 20px;
+    }
+
+
+    /* Meet the team grid */
+    .team-grid {
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 10px;
+    }
+
+    .person {
+        width: 80vw;
+        display: flex;
+        gap: 10px;
+    }
+
+    /* For mobile screens only */
+    @media only screen and (max-width: 550px) {
+        .person {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 250px;
+        }
+
+        .description {
+            margin: 0px;
+            padding-top: 5px;
+            padding-bottom: 25px;
+        }
+    }
+
+    /* For screens in between mobile and full screen computer */
+    .image-name {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .photo {
+        width: 250px;
+        height: fit-content;
+        background-color: rgb(177, 162, 163);
+        background-blend-mode: multiply;
+        background-size: contain;
+        color:rgb(253, 243, 230);
+    }
+
+    .image-name h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .description {
+        margin: 0px;
+    }
+
+
+    /* Picture section */
+    .picture-section {
+        min-height: 40vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url(../Images/Skiing.jpg);
+        background-color: rgb(177, 162, 163);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center, left;
+        color:rgb(253, 243, 230) ;
+    }
+
+    .quote {
+        max-width: 80vw;
+    }
+
+    
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        min-height: 10vh;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #3c4858;
+        color: rgb(253, 243, 230);
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .socials {
+        justify-content: center;
+        align-items: center;
+        min-width: 30vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-nav-bar {
+        display: none;
+    }
+}
+
 /* For smaller devices */
 @media only screen and (max-width: 767px){
 
