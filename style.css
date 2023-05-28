@@ -53,6 +53,214 @@ ul {
     color:rgb(253, 243, 230);
 }
 
+/* Set the mobile version for printing */
+@media print {
+    
+    .nav-items, #comp-logo {
+        display: none;
+    }
+
+    #menu-bars {
+        font-size: 30px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #myLinks {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+        justify-content: space-evenly;
+        font-size: 2em;
+    }
+
+    header {
+        overflow: hidden;
+        position: sticky;
+        display: flex;
+        flex-direction: row;
+        min-height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+
+    .logo {
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    .pop-out i {
+        font-size: 10px;
+    }
+
+    .pop-out-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .pop-out-content {
+        padding-top: 15px;
+        display: none;
+        flex-direction: column;
+        font-size: x-large;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* Hero section */
+    .hero {
+        display: flex;
+        min-height: 70vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        max-width: 90vw;
+    }
+
+    .hero-header {
+        font-size: xx-large;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hero-content {
+        font-size: large;
+        text-align: center;
+    }
+
+    /* Link sections */
+    .link-section {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 90vw;
+        gap: 50px;
+    }
+
+    .link-section-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .link-section-title {
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+    .link-section-subtitle {
+        font-size: large;
+        font-weight: lighter;
+        max-width: 80vw;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 50vw;
+        gap: 15px;
+    }
+
+    .link-logo {
+        font-weight: bold;
+    }
+
+
+    /* Even sections */
+    .slide-section {
+        background-image: url(Images/Squat.jpg);
+        background-color: rgb(177, 162, 163);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center, left;
+        color:rgb(253, 243, 230);
+        min-height: 50vh;
+    }
+
+    .slide-section-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 90vw;
+        text-align: center;
+    }
+
+    .even-section-link {
+        min-width: 20vw;
+    }
+
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        min-height: 15vh;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #3c4858;
+        color: rgb(253, 243, 230);
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .socials {
+        justify-content: center;
+        align-items: center;
+        min-width: 30vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-nav-bar {
+        display: none;
+    }
+}
+
 /* For smaller devices */
 @media only screen and (max-width: 767px){
 
